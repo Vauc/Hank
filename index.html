@@ -1,7 +1,18 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+---
+layout: default
+---
+
+
+{% include career-profile.html %}
+
+{% if site.education_in_main %}
+    {% include education.html %}
+{% endif %}
+
+{% include experience.html %}
+
+{% include projects.html %}
+
+{% include publications.html %}
+
+{% include skills.html %}
